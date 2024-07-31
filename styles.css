@@ -17,3 +17,23 @@ html {
     min-height: 100%;
     overflow: auto;
 }
+
+.nav-bar {
+    background-color: white;
+    border: 5px solid black;
+    height: 4.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: auto;
+    background-color: white;
+    border: 5px solid black;
+    height: 6rem;
+}
