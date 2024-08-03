@@ -6,6 +6,7 @@
     --yellow-wave-color: #fffb96;
     --nav-height: 4.5rem;
     --border-thickness: 5px;
+    --footer-height: 6rem;
 }
 
 * {
@@ -13,7 +14,7 @@
     padding: 0;
 }
 
-html {
+html, body {
     height: 100%;
 }
 
@@ -22,9 +23,6 @@ ul {
 }
 
 .background-site {
-    background: -webkit-linear-gradient( var(--pink-wave-color), var(--yellow-wave-color));
-    background-repeat: no-repeat;
-    background-attachment: fixed;
     min-height: 100%;
     overflow: auto;
 }
@@ -56,13 +54,24 @@ ul {
     font-size: 1.5rem;
 }
 
+.main-content {
+    min-height: calc(100% - var(--nav-height) - var(--footer-height) - 4*var(--border-thickness));
+    border-left: var(--border-thickness) solid black;
+    border-right: var(--border-thickness) solid black;
+    background-image: -webkit-linear-gradient( 
+        var(--pink-wave-color),
+        var(--yellow-wave-color));
+    overflow: auto;
+}
+
+
+
 .footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
     overflow: auto;
     background-color: white;
     border: var(--border-thickness) solid black;
-    height: 6rem;
+    height: var(--footer-height);
+    background: -webkit-linear-gradient( 
+        var(--yellow-wave-color),
+        var(--blue-wave-color));
 }
