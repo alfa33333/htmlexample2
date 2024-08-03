@@ -73,5 +73,5 @@ ul {
     height: var(--footer-height);
     background: -webkit-linear-gradient( 
         var(--yellow-wave-color),
-        var(--blue-wave-color));
+        var(--purple-wave-color));
 }
