@@ -62,9 +62,10 @@ ul {
         var(--pink-wave-color),
         var(--yellow-wave-color));
     overflow: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
-
-
 
 .footer {
     overflow: auto;
@@ -75,3 +76,10 @@ ul {
         var(--yellow-wave-color),
         var(--purple-wave-color));
 }
+
+.card {
+    border: var(--border-thickness) solid black;
+    border-radius: 1rem;
+    min-height: fit-content;
+}
+
